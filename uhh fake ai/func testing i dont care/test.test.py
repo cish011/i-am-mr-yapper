@@ -1,6 +1,7 @@
 class strings_i_guess:
     strings = []
-    def make(name):
+    @staticmethod
+    def make(name): 
         strings_i_guess.strings.append(name)
 
 print(strings_i_guess.strings)
