@@ -1,6 +1,6 @@
-import time, random, string
+import time, random, string, breed
 
-
+strings = breed.strings
 
 
 
@@ -12,13 +12,11 @@ def sleep(seconds) -> None:
 def breeding():
     ...
 
-def generate_string(length) -> str:
-    temp = ""
-    for i in range(0, length):
-        temp += random.choice(string.ascii_lowercase)
-    return temp
+def generate_string(length) -> None:
+    for i in range(0,20):
+        temp = ""
+        for i in range(0, length):
+            temp += random.choice(string.ascii_lowercase)
+        strings.append(temp)
+    
 
-def main() -> None:
-    while (True):
-        sleep(0.1)
-        print(generate_string(10))
