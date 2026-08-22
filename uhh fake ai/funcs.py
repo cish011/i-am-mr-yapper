@@ -16,7 +16,7 @@ def breeding() -> None:
         breed_pool.append(strings.pop(0))
         breed_pool.append(strings.pop(0))
         offspring.append(breed_pool[0][:int(len(breed_pool[0])/2)] + breed_pool[1][int(len(breed_pool[1])/2):len(breed_pool[1])])
-        offspring.append(breed_pool[0][int(len(breed_pool[0])/2):len(breed_pool[0])])
+        offspring.append(breed_pool[0][int(len(breed_pool[0])/2):len(breed_pool[0])] + breed_pool[1][:len(breed_pool[1])//2])
         ...
 
 
