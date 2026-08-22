@@ -1,0 +1,9 @@
+{
+    "name": "Mr Yapper Python Laboratory",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+        "ghcr.io/devcontainers/features/python:1": {
+            "version": "3.14.4"
+        }
+    }
+}
